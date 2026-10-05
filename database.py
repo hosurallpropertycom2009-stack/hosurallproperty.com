@@ -52,7 +52,7 @@ else:
 UPLOAD_DIR = "property_images"
 MAX_PHOTOS_PER_AD = 5
 ALLOWED_IMAGE_TYPES = {"image/png", "image/jpeg", "image/gif"}
-MAX_IMAGE_SIZE_BYTES = 1000 * 1024  # 1000kb — matches the frontend's stated limit
+MAX_IMAGE_SIZE_BYTES = 4 * 1024 * 1024  # 4 MB per image  # 1000kb — matches the frontend's stated limit
 
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
